@@ -4,6 +4,7 @@ html {
 
 body {
     margin: 0;
+    box-sizing: border-box;
     background-color: #efefef;
 }
 
@@ -11,7 +12,7 @@ header {
     background-color: #364552;
     color: white;
     padding: 3rem 2rem;
-}
+    }
 
 header h1 {
     font-size: 4rem;
@@ -19,8 +20,9 @@ header h1 {
 }
 
 .container {
-    width: 400px;
+    width: 600px;
     margin: 0 auto;
+   
 }
 
 section article {
@@ -40,6 +42,21 @@ section article h2, section article p{
     margin: 1rem;
 
 }
+
+p {
+    text-align: justify;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 0;
+    bottom: 120px;
+    background-color: rgb(44, 39, 39, 0.8);
+    border-radius: 20% 0% 0% 20%;
+
+    
+}
+
 
 footer {
     background-color: #222;
@@ -65,3 +82,14 @@ footer a:hover {
     color:cornflowerblue;
 
 }
+
+.text {
+    border-bottom: #fff solid;
+    padding: 0.5rem;
+    text-align: start;
+}
+
+.icon_instagram {
+    color: #364552;
+}
+
