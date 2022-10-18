@@ -1,28 +1,49 @@
+/* *{
+    border:solid 3px orange; 
+}*/
 html {
     font-family: 'Montserrat', sans-serif;
+   
 }
 
 body {
     margin: 0;
     box-sizing: border-box;
-    background-color: #efefef;
+    /* background-color: #efefef; */
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    
 }
 
 header {
-    background-color: #364552;
-    color: white;
-    padding: 3rem 2rem;
+    background-color: #7976b2;
+    color: #ffffff;
+    padding: 2rem 1rem;
+    width: 100%;
+    display: inline-block;
     }
 
 header h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
 }
+/* 
+/* header img {
+    width: 200px; 
+
+} */
 
 .container {
-    width: 600px;
+    width: 1350px;
     margin: 0 auto;
-   
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+    flex-wrap: wrap;
+}
+
+.post   {
+    width: 425px;
+    max-width: 100%;
+       
 }
 
 section article {
@@ -51,12 +72,16 @@ p {
     position: fixed;
     right: 0;
     bottom: 120px;
-    background-color: rgb(44, 39, 39, 0.8);
+    background-color: rgb(44, 39, 39, 0.6);
     border-radius: 20% 0% 0% 20%;
-
-    
+  
 }
 
+article img {
+    max-width: 100%;
+    align-items: center;
+        
+}
 
 footer {
     background-color: #222;
@@ -64,7 +89,7 @@ footer {
     color: #fff;
 }
 
-footer section {
+footer div {
     float:right;
 }
 
@@ -89,7 +114,13 @@ footer a:hover {
     text-align: start;
 }
 
-.icon_instagram {
-    color: #364552;
+@media (max-width:500px) {
+    .container {
+        width: 1350px;
+        margin: 0 auto;
+        display: block;
+        grid-template-columns: 33.3% 33.3% 33.3%;
+        flex-wrap: wrap;
+    }
+    
 }
-
